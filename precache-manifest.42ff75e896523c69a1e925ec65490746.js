@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/colorchange/static/js/runtime~main.7f343d1b.js"
   },
   {
-    "revision": "0ff18c1b3f05333fb064",
-    "url": "/colorchange/static/js/main.0ff18c1b.chunk.js"
+    "revision": "6adac13de891a7d16802",
+    "url": "/colorchange/static/js/main.6adac13d.chunk.js"
   },
   {
     "revision": "4d4949a9a9f903a5cc4a",
     "url": "/colorchange/static/js/1.4d4949a9.chunk.js"
   },
   {
-    "revision": "0ff18c1b3f05333fb064",
-    "url": "/colorchange/static/css/main.b23c58a5.chunk.css"
+    "revision": "6adac13de891a7d16802",
+    "url": "/colorchange/static/css/main.ff6618cf.chunk.css"
   },
   {
-    "revision": "a5301110259efd4365076c146f0aaec0",
+    "revision": "ff7a2e2c90df565db531e19bd9a1478d",
     "url": "/colorchange/index.html"
   }
 ];
