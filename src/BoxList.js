@@ -4,18 +4,13 @@ import BoxItem from './BoxItem'
 class Box extends Component{
 	constructor(props){
 		super(props)
-	console.log("Box num", this.props.boxNo)
 	}
 
 	render(){
-		const a=[]
-		for(let i=0;i<this.props.boxNo;i++){
-			a.push("")
-		}
-
+		const a=this.props.boxArray;
 		return(
 			<div className ="container">
-				{a.map(i=>{return <BoxItem colorlist={this.props.colorlist} />})}
+				{a.map(i=>{return <BoxItem colorList={this.props.colorList} />})}
 	      	</div>
 			)
 	}

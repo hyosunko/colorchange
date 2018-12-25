@@ -4,27 +4,29 @@ class BoxItem extends Component {
   constructor(props){
     super(props)
     this.state ={
-      color: this.props.colorlist[Math.floor(Math.random()*this.props.colorlist.length)],
+      colorList: this.props.colorList,
       click: 0,
+      color: this.props.colorList[Math.floor(Math.random()*this.props.colorList.length)]
     }
-
   }
 
 
   colorChanger = (props) => {
-    var colorlist = this.props.colorlist
-    var { click, color} = this.state
-    click=Math.floor(Math.random()*colorlist.length)+1
+    // var color = this.props.colorlist[click]
+    var {click, colorList, color} = this.state
+    click=Math.floor(Math.random()*colorList.length)
     // click++
-    this.setState({click: click%colorlist.length, color: colorlist[click-1]});
+    this.setState({click: click%colorList.length, color: colorList[click]});
+  console.log("color: ", this.state.color)
   }
 
   render() {
+
     var sectionStyle ={
       background : this.state.color
     }
     return(
-      <div style={sectionStyle} className="clickbox" onClick={this.colorChanger.bind(this)}><h1>{this.state.color}</h1></div>
+      <div style={sectionStyle} className="clickbox" onClick={this.colorChanger}><h3>{this.state.color}</h3></div>
     )
   }
 }
